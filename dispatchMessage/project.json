@@ -1,0 +1,13 @@
+{
+  "name": "messageDispatch",
+  "description": "",
+  "role": "arn:aws:iam::528329135098:role/messageDispatch_lambda_function",
+  "runtime": "nodejs4.3",
+  "memory": 128,
+  "timeout": 10,
+  "handler": "lib.default",
+  "hooks": {
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.config.js",
+    "clean": "rm -fr lib"
+  }
+}
