@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient,
 
 module.exports = class DispatchMessage {
   constructor() {
-    this.url = 'mongodb://avjpl:jj010479@ds149567.mlab.com:49567/development';
+    this.url = '';
   }
 
   connect(cb) {
